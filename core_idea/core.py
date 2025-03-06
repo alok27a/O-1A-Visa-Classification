@@ -8,12 +8,13 @@ from io import BytesIO
 from core_idea.config import settings
 from core_idea.schemas import AssessmentResult
 
+
 # ----------------------
 # LLM Prompts (USCIS-aligned)
 # ----------------------
 LLM_PROMPTS = {
     "awards": """Evaluate if the text describes a nationally/internationally recognized achievement:
-1. Major competition wins (hackathons, industry challenges)
+1. Major competition wins (hackathon, industry challenges)
 2. Prestigious scholarships/fellowships
 3. Selective recognition lists (Forbes 30, 40 Under 40)
 Text: {text}
